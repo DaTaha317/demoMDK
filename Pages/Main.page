@@ -15,7 +15,7 @@
 						{
 							"Title": "Customers",
 							"Image": "sap-icon://customer-and-contacts",
-							"OnPress": "/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_List.action",
+							"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomer_list.action",
 							"_Name": "SideDrawerSection0Item0",
 							"Visible": true,
 							"TextAlignment": "Left"
@@ -44,7 +44,7 @@
 	"_Name": "sideDrawer",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
