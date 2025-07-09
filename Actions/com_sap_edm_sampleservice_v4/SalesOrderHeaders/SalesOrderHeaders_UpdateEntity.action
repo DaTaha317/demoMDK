@@ -1,0 +1,25 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "SalesOrderHeaders",
+        "Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "CreatedAt": "#Page:SalesOrderHeaders_Edit/#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Page:SalesOrderHeaders_Edit/#Control:CurrencyCode/#Value",
+        "CustomerID": "#Page:SalesOrderHeaders_Edit/#Control:CustomerID/#SelectedValue",
+        "GrossAmount": "#Page:SalesOrderHeaders_Edit/#Control:GrossAmount/#Value",
+        "LifeCycleStatus": "#Page:SalesOrderHeaders_Edit/#Control:LifeCycleStatus/#Value",
+        "LifeCycleStatusName": "#Page:SalesOrderHeaders_Edit/#Control:LifeCycleStatusName/#Value",
+        "NetAmount": "#Page:SalesOrderHeaders_Edit/#Control:NetAmount/#Value",
+        "SalesOrderID": "#Page:SalesOrderHeaders_Edit/#Control:SalesOrderID/#Value",
+        "TaxAmount": "#Page:SalesOrderHeaders_Edit/#Control:TaxAmount/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/demoTahaApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/demoTahaApp/Actions/UpdateEntityFailureMessage.action"
+}

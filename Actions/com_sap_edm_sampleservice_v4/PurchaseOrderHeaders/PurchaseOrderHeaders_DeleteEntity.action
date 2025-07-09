@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "PurchaseOrderHeaders",
+        "Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/demoTahaApp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/demoTahaApp/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}
