@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToCustomer_details"
+	},
+	"PageToOpen": "/demoTahaApp/Pages/Customers/Customers_details.page"
+}
