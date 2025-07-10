@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToCustomers_Edit"
+	},
+	"PageToOpen": "/demoTahaApp/Pages/Customers/Customres_edits.page",
+	"ModalPage": true
+}

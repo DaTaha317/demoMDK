@@ -27,12 +27,6 @@
 					"Visible": true
 				},
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -71,6 +65,12 @@
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
@@ -85,7 +85,18 @@
 	"_Type": "Page",
 	"_Name": "Customers_details",
 	"ActionBar": {
-		"Items": [],
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"
+			}
+		],
 		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Details"
