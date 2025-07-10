@@ -5,6 +5,7 @@
 	},
 	"OnFailure": "/demoTahaApp/Actions/Customers/UpdateCustomerEntityFailureMessage.action",
 	"OnSuccess": "/demoTahaApp/Actions/CloseModalPage_Complete.action",
+	"ValidationRule": "/demoTahaApp/Rules/Customers/EmailValidation.js",
 	"Target": {
 		"Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
 		"EntitySet": "Customers",

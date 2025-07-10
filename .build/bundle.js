@@ -137,6 +137,7 @@ let demotahaapp_actions_com_sap_edm_sampleservice_v4_suppliers_suppliers_updatee
 let demotahaapp_actions_createentityfailuremessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/CreateEntityFailureMessage.action */ "./build.definitions/demoTahaApp/Actions/CreateEntityFailureMessage.action")
 let demotahaapp_actions_createentitysuccessmessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/CreateEntitySuccessMessage.action */ "./build.definitions/demoTahaApp/Actions/CreateEntitySuccessMessage.action")
 let demotahaapp_actions_customers_customers_updateentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_UpdateEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_UpdateEntity.action")
+let demotahaapp_actions_customers_emailvalidationfailure_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/EmailValidationFailure.action */ "./build.definitions/demoTahaApp/Actions/Customers/EmailValidationFailure.action")
 let demotahaapp_actions_customers_navtocustomer_details_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomer_details.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomer_details.action")
 let demotahaapp_actions_customers_navtocustomer_list_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomer_list.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomer_list.action")
 let demotahaapp_actions_customers_navtocustomers_edit_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomers_Edit.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action")
@@ -241,6 +242,7 @@ let demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderheaders_salesorderh
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js")
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js")
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js")
+let demotahaapp_rules_customers_emailvalidation_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/EmailValidation.js */ "./build.definitions/demoTahaApp/Rules/Customers/EmailValidation.js")
 let demotahaapp_rules_logging_loglevels_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/LogLevels.js */ "./build.definitions/demoTahaApp/Rules/Logging/LogLevels.js")
 let demotahaapp_rules_logging_settracecategories_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/SetTraceCategories.js */ "./build.definitions/demoTahaApp/Rules/Logging/SetTraceCategories.js")
 let demotahaapp_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/demoTahaApp/Rules/Logging/SetUserLogLevel.js")
@@ -378,6 +380,7 @@ module.exports = {
 	demotahaapp_actions_createentityfailuremessage_action : demotahaapp_actions_createentityfailuremessage_action,
 	demotahaapp_actions_createentitysuccessmessage_action : demotahaapp_actions_createentitysuccessmessage_action,
 	demotahaapp_actions_customers_customers_updateentity_action : demotahaapp_actions_customers_customers_updateentity_action,
+	demotahaapp_actions_customers_emailvalidationfailure_action : demotahaapp_actions_customers_emailvalidationfailure_action,
 	demotahaapp_actions_customers_navtocustomer_details_action : demotahaapp_actions_customers_navtocustomer_details_action,
 	demotahaapp_actions_customers_navtocustomer_list_action : demotahaapp_actions_customers_navtocustomer_list_action,
 	demotahaapp_actions_customers_navtocustomers_edit_action : demotahaapp_actions_customers_navtocustomers_edit_action,
@@ -482,6 +485,7 @@ module.exports = {
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js,
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js,
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js,
+	demotahaapp_rules_customers_emailvalidation_js : demotahaapp_rules_customers_emailvalidation_js,
 	demotahaapp_rules_logging_loglevels_js : demotahaapp_rules_logging_loglevels_js,
 	demotahaapp_rules_logging_settracecategories_js : demotahaapp_rules_logging_settracecategories_js,
 	demotahaapp_rules_logging_setuserloglevel_js : demotahaapp_rules_logging_setuserloglevel_js,
@@ -753,6 +757,34 @@ function ResetAppSettingsAndLogout(clientAPI) {
   } finally {
     // Logout 
     return clientAPI.getPageProxy().executeAction('/demoTahaApp/Actions/Application/Reset.action');
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Rules/Customers/EmailValidation.js":
+/*!**************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Rules/Customers/EmailValidation.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ EmailValidation)
+/* harmony export */ });
+/**
+* Describe this function...
+* @param {IClientAPI} context
+*/
+function EmailValidation(context) {
+  //The following evaluateTargetPath will retrieve the current value of the email control
+  if (context.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@') === -1) {
+    //If email value does not contain @ display a validation failure message to the end-user
+    context.executeAction('/demoTahaApp/Actions/Customers/EmailValidationFailure.action');
+  } else {
+    //If @ is present in the email value, return true to indicate validation is successful
+    return true;
   }
 }
 
@@ -2383,7 +2415,17 @@ module.exports = {"Animated":true,"Duration":2,"Message":"Entity created","IsIco
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Customers_UpdateEntity"},"OnFailure":"/demoTahaApp/Actions/Customers/UpdateCustomerEntityFailureMessage.action","OnSuccess":"/demoTahaApp/Actions/CloseModalPage_Complete.action","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"},"Properties":{"EmailAddress":"#Page:Customres_edits/#Control:FCEmail/#Value","FirstName":"#Page:Customres_edits/#Control:FCFirstName/#Value","LastName":"#Page:Customres_edits/#Control:FCLastName/#Value","PhoneNumber":"#Page:Customres_edits/#Control:FCPhone/#Value"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Customers_UpdateEntity"},"OnFailure":"/demoTahaApp/Actions/Customers/UpdateCustomerEntityFailureMessage.action","OnSuccess":"/demoTahaApp/Actions/CloseModalPage_Complete.action","ValidationRule":"/demoTahaApp/Rules/Customers/EmailValidation.js","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"},"Properties":{"EmailAddress":"#Page:Customres_edits/#Control:FCEmail/#Value","FirstName":"#Page:Customres_edits/#Control:FCFirstName/#Value","LastName":"#Page:Customres_edits/#Control:FCLastName/#Value","PhoneNumber":"#Page:Customres_edits/#Control:FCPhone/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Actions/Customers/EmailValidationFailure.action":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Actions/Customers/EmailValidationFailure.action ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"EmailValidationFailure"},"Message":"Email address is not in the correct format recipient @ domain . domaintype","Title":"Validate Email","OKCaption":"OK"}
 
 /***/ }),
 
