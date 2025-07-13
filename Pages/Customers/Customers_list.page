@@ -65,7 +65,18 @@
 	"_Type": "Page",
 	"_Name": "Customers_list",
 	"ActionBar": {
-		"Items": [],
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomers_Create.action"
+			}
+		],
 		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Customers"

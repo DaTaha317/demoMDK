@@ -4,5 +4,7 @@
     ],
     "mdk.uieditor": {
         "device": "phone"
-    }
+    },
+    "mdk.defaultEditor": "MDK Editor",
+    "workbench.editorAssociations": {}
 }
