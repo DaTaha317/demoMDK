@@ -141,6 +141,7 @@ let demotahaapp_actions_customers_customers_createentity_action = __webpack_requ
 let demotahaapp_actions_customers_customers_deleteconfirmation_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action")
 let demotahaapp_actions_customers_customers_deleteentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_DeleteEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteEntity.action")
 let demotahaapp_actions_customers_customers_updateentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_UpdateEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_UpdateEntity.action")
+let demotahaapp_actions_customers_deletecustomerentityfailuremessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/DeleteCustomerEntityFailureMessage.action */ "./build.definitions/demoTahaApp/Actions/Customers/DeleteCustomerEntityFailureMessage.action")
 let demotahaapp_actions_customers_emailvalidationfailure_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/EmailValidationFailure.action */ "./build.definitions/demoTahaApp/Actions/Customers/EmailValidationFailure.action")
 let demotahaapp_actions_customers_navtocustomer_details_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomer_details.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomer_details.action")
 let demotahaapp_actions_customers_navtocustomer_list_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomer_list.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomer_list.action")
@@ -391,6 +392,7 @@ module.exports = {
 	demotahaapp_actions_customers_customers_deleteconfirmation_action : demotahaapp_actions_customers_customers_deleteconfirmation_action,
 	demotahaapp_actions_customers_customers_deleteentity_action : demotahaapp_actions_customers_customers_deleteentity_action,
 	demotahaapp_actions_customers_customers_updateentity_action : demotahaapp_actions_customers_customers_updateentity_action,
+	demotahaapp_actions_customers_deletecustomerentityfailuremessage_action : demotahaapp_actions_customers_deletecustomerentityfailuremessage_action,
 	demotahaapp_actions_customers_emailvalidationfailure_action : demotahaapp_actions_customers_emailvalidationfailure_action,
 	demotahaapp_actions_customers_navtocustomer_details_action : demotahaapp_actions_customers_navtocustomer_details_action,
 	demotahaapp_actions_customers_navtocustomer_list_action : demotahaapp_actions_customers_navtocustomer_list_action,
@@ -2496,7 +2498,7 @@ module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"Custome
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult":{"_Name":"Customers_DeleteEntity"},"Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"}}
+module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult":{"_Name":"Customers_DeleteEntity"},"OnFailure":"/demoTahaApp/Actions/Customers/DeleteCustomerEntityFailureMessage.action","OnSuccess":"/demoTahaApp/Actions/CloseModalPage_Complete.action","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"}}
 
 /***/ }),
 
@@ -2507,6 +2509,16 @@ module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Customers_UpdateEntity"},"OnFailure":"/demoTahaApp/Actions/Customers/UpdateCustomerEntityFailureMessage.action","OnSuccess":"/demoTahaApp/Actions/CloseModalPage_Complete.action","ValidationRule":"/demoTahaApp/Rules/Customers/EmailValidation.js","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"},"Properties":{"EmailAddress":"#Page:Customres_edits/#Control:FCEmail/#Value","FirstName":"#Page:Customres_edits/#Control:FCFirstName/#Value","LastName":"#Page:Customres_edits/#Control:FCLastName/#Value","PhoneNumber":"#Page:Customres_edits/#Control:FCPhone/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Actions/Customers/DeleteCustomerEntityFailureMessage.action":
+/*!***************************************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Actions/Customers/DeleteCustomerEntityFailureMessage.action ***!
+  \***************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"DeleteCustomerEntityFailureMessage"},"Message":"Delete entity failure - {#ActionResults:Customers_DeleteEntity/error}","Title":"Delete Customer","OKCaption":"OK"}
 
 /***/ }),
 
