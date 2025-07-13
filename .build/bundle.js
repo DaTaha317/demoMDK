@@ -138,6 +138,8 @@ let demotahaapp_actions_createentityfailuremessage_action = __webpack_require__(
 let demotahaapp_actions_createentitysuccessmessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/CreateEntitySuccessMessage.action */ "./build.definitions/demoTahaApp/Actions/CreateEntitySuccessMessage.action")
 let demotahaapp_actions_customers_createcustomerentityfailuremessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/CreateCustomerEntityFailureMessage.action */ "./build.definitions/demoTahaApp/Actions/Customers/CreateCustomerEntityFailureMessage.action")
 let demotahaapp_actions_customers_customers_createentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_CreateEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_CreateEntity.action")
+let demotahaapp_actions_customers_customers_deleteconfirmation_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action")
+let demotahaapp_actions_customers_customers_deleteentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_DeleteEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteEntity.action")
 let demotahaapp_actions_customers_customers_updateentity_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/Customers_UpdateEntity.action */ "./build.definitions/demoTahaApp/Actions/Customers/Customers_UpdateEntity.action")
 let demotahaapp_actions_customers_emailvalidationfailure_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/EmailValidationFailure.action */ "./build.definitions/demoTahaApp/Actions/Customers/EmailValidationFailure.action")
 let demotahaapp_actions_customers_navtocustomer_details_action = __webpack_require__(/*! ./demoTahaApp/Actions/Customers/NavToCustomer_details.action */ "./build.definitions/demoTahaApp/Actions/Customers/NavToCustomer_details.action")
@@ -246,6 +248,7 @@ let demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderheaders_salesorderh
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/SalesOrderItems/SalesOrderItems_DeleteConfirmation.js")
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js")
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js")
+let demotahaapp_rules_customers_customers_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js")
 let demotahaapp_rules_customers_emailvalidation_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/EmailValidation.js */ "./build.definitions/demoTahaApp/Rules/Customers/EmailValidation.js")
 let demotahaapp_rules_logging_loglevels_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/LogLevels.js */ "./build.definitions/demoTahaApp/Rules/Logging/LogLevels.js")
 let demotahaapp_rules_logging_settracecategories_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/SetTraceCategories.js */ "./build.definitions/demoTahaApp/Rules/Logging/SetTraceCategories.js")
@@ -385,6 +388,8 @@ module.exports = {
 	demotahaapp_actions_createentitysuccessmessage_action : demotahaapp_actions_createentitysuccessmessage_action,
 	demotahaapp_actions_customers_createcustomerentityfailuremessage_action : demotahaapp_actions_customers_createcustomerentityfailuremessage_action,
 	demotahaapp_actions_customers_customers_createentity_action : demotahaapp_actions_customers_customers_createentity_action,
+	demotahaapp_actions_customers_customers_deleteconfirmation_action : demotahaapp_actions_customers_customers_deleteconfirmation_action,
+	demotahaapp_actions_customers_customers_deleteentity_action : demotahaapp_actions_customers_customers_deleteentity_action,
 	demotahaapp_actions_customers_customers_updateentity_action : demotahaapp_actions_customers_customers_updateentity_action,
 	demotahaapp_actions_customers_emailvalidationfailure_action : demotahaapp_actions_customers_emailvalidationfailure_action,
 	demotahaapp_actions_customers_navtocustomer_details_action : demotahaapp_actions_customers_navtocustomer_details_action,
@@ -493,6 +498,7 @@ module.exports = {
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_deleteconfirmation_js,
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js,
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js,
+	demotahaapp_rules_customers_customers_deleteconfirmation_js : demotahaapp_rules_customers_customers_deleteconfirmation_js,
 	demotahaapp_rules_customers_emailvalidation_js : demotahaapp_rules_customers_emailvalidation_js,
 	demotahaapp_rules_logging_loglevels_js : demotahaapp_rules_logging_loglevels_js,
 	demotahaapp_rules_logging_settracecategories_js : demotahaapp_rules_logging_settracecategories_js,
@@ -766,6 +772,33 @@ function ResetAppSettingsAndLogout(clientAPI) {
     // Logout 
     return clientAPI.getPageProxy().executeAction('/demoTahaApp/Actions/Application/Reset.action');
   }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Customers_DeleteConfirmation)
+/* harmony export */ });
+/**
+* Describe this function...
+* @param {IClientAPI} context
+*/
+function Customers_DeleteConfirmation(context) {
+  return context.executeAction('/demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action').then(result => {
+    if (result.data) {
+      return context.executeAction('/demoTahaApp/Actions/Customers/Customers_DeleteEntity.action').then(success => Promise.resolve(success), failure => Promise.reject('Delete entity failed ' + failure));
+    } else {
+      return Promise.reject('User Deferred');
+    }
+  });
 }
 
 /***/ }),
@@ -1713,7 +1746,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"}}
 
 /***/ }),
 
@@ -2444,6 +2477,26 @@ module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"CreateC
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Customers_CreateEntity"},"OnFailure":"/demoTahaApp/Actions/Customers/CreateCustomerEntityFailureMessage.action","OnSuccess":"/demoTahaApp/Actions/CloseModalPage_Complete.action","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"Properties":{"DateOfBirth":"#Page:Customers_create/#Control:FCCreateDOB/#Value","EmailAddress":"#Page:Customers_create/#Control:FCCreateEmail/#Value","FirstName":"#Page:Customers_create/#Control:FCCreateFirstName/#Value","LastName":"#Page:Customers_create/#Control:FCCreateLastName/#Value","PhoneNumber":"#Page:Customers_create/#Control:FCCreatePhone/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteConfirmation.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"Customers_DeleteConfirmation"},"Message":"Delete current entity?","Title":"Delete Confirmation","OKCaption":"OK","CancelCaption":"Cancel"}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteEntity.action":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Actions/Customers/Customers_DeleteEntity.action ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult":{"_Name":"Customers_DeleteEntity"},"Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"}}
 
 /***/ }),
 

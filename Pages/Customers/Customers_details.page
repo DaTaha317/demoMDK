@@ -95,6 +95,16 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"
 			}
 		],
 		"_Name": "ActionBar3",
