@@ -162,6 +162,7 @@ let demotahaapp_actions_logging_loguploadfailure_action = __webpack_require__(/*
 let demotahaapp_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./demoTahaApp/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/demoTahaApp/Actions/Logging/LogUploadSuccessful.action")
 let demotahaapp_actions_logging_uploadlog_action = __webpack_require__(/*! ./demoTahaApp/Actions/Logging/UploadLog.action */ "./build.definitions/demoTahaApp/Actions/Logging/UploadLog.action")
 let demotahaapp_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./demoTahaApp/Actions/Logging/UploadLogProgress.action */ "./build.definitions/demoTahaApp/Actions/Logging/UploadLogProgress.action")
+let demotahaapp_actions_orders_navtoorders_details_action = __webpack_require__(/*! ./demoTahaApp/Actions/Orders/NavToOrders_details.action */ "./build.definitions/demoTahaApp/Actions/Orders/NavToOrders_details.action")
 let demotahaapp_actions_updateentityfailuremessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/UpdateEntityFailureMessage.action */ "./build.definitions/demoTahaApp/Actions/UpdateEntityFailureMessage.action")
 let demotahaapp_actions_updateentitysuccessmessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/UpdateEntitySuccessMessage.action */ "./build.definitions/demoTahaApp/Actions/UpdateEntitySuccessMessage.action")
 let demotahaapp_actions_uploadstreamfailuremessage_action = __webpack_require__(/*! ./demoTahaApp/Actions/UploadStreamFailureMessage.action */ "./build.definitions/demoTahaApp/Actions/UploadStreamFailureMessage.action")
@@ -225,11 +226,13 @@ let demotahaapp_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_list_page
 let demotahaapp_pages_customers_customers_create_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customers_create.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customers_create.page")
 let demotahaapp_pages_customers_customers_details_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customers_details.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customers_details.page")
 let demotahaapp_pages_customers_customers_list_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customers_list.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customers_list.page")
+let demotahaapp_pages_customers_customers_orders_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customers_Orders.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customers_Orders.page")
 let demotahaapp_pages_customers_customres_edits_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customres_edits.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customres_edits.page")
 let demotahaapp_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./demoTahaApp/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/demoTahaApp/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let demotahaapp_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./demoTahaApp/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/demoTahaApp/Pages/ErrorArchive/ErrorArchive_List.page")
 let demotahaapp_pages_main_page = __webpack_require__(/*! ./demoTahaApp/Pages/Main.page */ "./build.definitions/demoTahaApp/Pages/Main.page")
 let demotahaapp_pages_mainbackup_page = __webpack_require__(/*! ./demoTahaApp/Pages/MainBackUp.page */ "./build.definitions/demoTahaApp/Pages/MainBackUp.page")
+let demotahaapp_pages_orders_salesorders_details_page = __webpack_require__(/*! ./demoTahaApp/Pages/Orders/SalesOrders_Details.page */ "./build.definitions/demoTahaApp/Pages/Orders/SalesOrders_Details.page")
 let demotahaapp_rules_application_appupdatefailure_js = __webpack_require__(/*! ./demoTahaApp/Rules/Application/AppUpdateFailure.js */ "./build.definitions/demoTahaApp/Rules/Application/AppUpdateFailure.js")
 let demotahaapp_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./demoTahaApp/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/demoTahaApp/Rules/Application/AppUpdateSuccess.js")
 let demotahaapp_rules_application_clientismultiusermode_js = __webpack_require__(/*! ./demoTahaApp/Rules/Application/ClientIsMultiUserMode.js */ "./build.definitions/demoTahaApp/Rules/Application/ClientIsMultiUserMode.js")
@@ -250,6 +253,7 @@ let demotahaapp_rules_com_sap_edm_sampleservice_v4_salesorderitems_salesorderite
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Stock/Stock_DeleteConfirmation.js")
 let demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/com_sap_edm_sampleservice_v4/Suppliers/Suppliers_DeleteConfirmation.js")
 let demotahaapp_rules_customers_customers_deleteconfirmation_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js */ "./build.definitions/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js")
+let demotahaapp_rules_customers_customers_ordercount_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/Customers_OrderCount.js */ "./build.definitions/demoTahaApp/Rules/Customers/Customers_OrderCount.js")
 let demotahaapp_rules_customers_emailvalidation_js = __webpack_require__(/*! ./demoTahaApp/Rules/Customers/EmailValidation.js */ "./build.definitions/demoTahaApp/Rules/Customers/EmailValidation.js")
 let demotahaapp_rules_logging_loglevels_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/LogLevels.js */ "./build.definitions/demoTahaApp/Rules/Logging/LogLevels.js")
 let demotahaapp_rules_logging_settracecategories_js = __webpack_require__(/*! ./demoTahaApp/Rules/Logging/SetTraceCategories.js */ "./build.definitions/demoTahaApp/Rules/Logging/SetTraceCategories.js")
@@ -413,6 +417,7 @@ module.exports = {
 	demotahaapp_actions_logging_loguploadsuccessful_action : demotahaapp_actions_logging_loguploadsuccessful_action,
 	demotahaapp_actions_logging_uploadlog_action : demotahaapp_actions_logging_uploadlog_action,
 	demotahaapp_actions_logging_uploadlogprogress_action : demotahaapp_actions_logging_uploadlogprogress_action,
+	demotahaapp_actions_orders_navtoorders_details_action : demotahaapp_actions_orders_navtoorders_details_action,
 	demotahaapp_actions_updateentityfailuremessage_action : demotahaapp_actions_updateentityfailuremessage_action,
 	demotahaapp_actions_updateentitysuccessmessage_action : demotahaapp_actions_updateentitysuccessmessage_action,
 	demotahaapp_actions_uploadstreamfailuremessage_action : demotahaapp_actions_uploadstreamfailuremessage_action,
@@ -476,11 +481,13 @@ module.exports = {
 	demotahaapp_pages_customers_customers_create_page : demotahaapp_pages_customers_customers_create_page,
 	demotahaapp_pages_customers_customers_details_page : demotahaapp_pages_customers_customers_details_page,
 	demotahaapp_pages_customers_customers_list_page : demotahaapp_pages_customers_customers_list_page,
+	demotahaapp_pages_customers_customers_orders_page : demotahaapp_pages_customers_customers_orders_page,
 	demotahaapp_pages_customers_customres_edits_page : demotahaapp_pages_customers_customres_edits_page,
 	demotahaapp_pages_errorarchive_errorarchive_detail_page : demotahaapp_pages_errorarchive_errorarchive_detail_page,
 	demotahaapp_pages_errorarchive_errorarchive_list_page : demotahaapp_pages_errorarchive_errorarchive_list_page,
 	demotahaapp_pages_main_page : demotahaapp_pages_main_page,
 	demotahaapp_pages_mainbackup_page : demotahaapp_pages_mainbackup_page,
+	demotahaapp_pages_orders_salesorders_details_page : demotahaapp_pages_orders_salesorders_details_page,
 	demotahaapp_rules_application_appupdatefailure_js : demotahaapp_rules_application_appupdatefailure_js,
 	demotahaapp_rules_application_appupdatesuccess_js : demotahaapp_rules_application_appupdatesuccess_js,
 	demotahaapp_rules_application_clientismultiusermode_js : demotahaapp_rules_application_clientismultiusermode_js,
@@ -501,6 +508,7 @@ module.exports = {
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_stock_stock_deleteconfirmation_js,
 	demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js : demotahaapp_rules_com_sap_edm_sampleservice_v4_suppliers_suppliers_deleteconfirmation_js,
 	demotahaapp_rules_customers_customers_deleteconfirmation_js : demotahaapp_rules_customers_customers_deleteconfirmation_js,
+	demotahaapp_rules_customers_customers_ordercount_js : demotahaapp_rules_customers_customers_ordercount_js,
 	demotahaapp_rules_customers_emailvalidation_js : demotahaapp_rules_customers_emailvalidation_js,
 	demotahaapp_rules_logging_loglevels_js : demotahaapp_rules_logging_loglevels_js,
 	demotahaapp_rules_logging_settracecategories_js : demotahaapp_rules_logging_settracecategories_js,
@@ -800,6 +808,32 @@ function Customers_DeleteConfirmation(context) {
     } else {
       return Promise.reject('User Deferred');
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Rules/Customers/Customers_OrderCount.js":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Rules/Customers/Customers_OrderCount.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CustomerOrderCount)
+/* harmony export */ });
+/**
+* Describe this function...
+* @param {IClientAPI} context
+*/
+function CustomerOrderCount(context) {
+  // Retrieves the current customer's information from the context
+  const currentCustomer = context.getPageProxy().binding['@odata.readLink'];
+  // Counts the number of sales orders associated with the current customer.
+  return context.count('/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service', currentCustomer + '/SalesOrders', '').then(count => {
+    return count;
   });
 }
 
@@ -1732,6 +1766,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/demoTahaApp/Pages/Customers/Customers_Orders.page":
+/*!*****************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Pages/Customers/Customers_Orders.page ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"SalesOrderHeaders","QueryOptions":"$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No orders found","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"$(D,{CreatedAt},'','',{format:'medium'})","Subhead":"{CustomerID}","DisplayDescriptionInMobile":true,"StatusText":"$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/demoTahaApp/Actions/Orders/NavToOrders_details.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrders_Details.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"Search":{"Enabled":true,"BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Customers_Orders","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
 /***/ "./build.definitions/demoTahaApp/Pages/Customers/Customers_create.page":
 /*!*****************************************************************************!*\
   !*** ./build.definitions/demoTahaApp/Pages/Customers/Customers_create.page ***!
@@ -1748,7 +1792,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"{@odata.readLink}/SalesOrders","QueryOptions":"$top=5&$orderby=CreatedAt desc"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Customer Orders"},"Footer":{"_Type":"SectionCommon.Type.Footer","_Name":"SectionCommonTypeFooter0","Caption":"See all","AttributeLabel":"/demoTahaApp/Rules/Customers/Customers_OrderCount.js","AccessoryType":"DisclosureIndicator","FooterStyle":"Attribute","Visible":true,"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Customers/Customers_Orders.page"}},"UseBottomPadding":false},"Visible":true,"EmptySection":{"Caption":"No Customer Orders Found","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"$(D,{CreatedAt},'','',{format:'medium'})","Subhead":"{CustomerID}","DisplayDescriptionInMobile":true,"StatusText":"$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrders_Details.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"}}
 
 /***/ }),
 
@@ -1809,6 +1853,16 @@ module.exports = {"Controls":[{"Header":{"Headline":"Services","SubHeadline":"Su
 /***/ ((module) => {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader_com_sap_edm_sampleservice_v4","AccessoryType":"None","UseTopPadding":true,"Caption":"com_sap_edm_sampleservice_v4","_Type":"SectionCommon.Type.Header"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Buttons":[{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Customers/NavToCustomers_List.action","Alignment":"Center","Title":"Customers","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/ProductCategories/NavToProductCategories_List.action","Alignment":"Center","Title":"ProductCategories","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action","Alignment":"Center","Title":"Products","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/ProductTexts/NavToProductTexts_List.action","Alignment":"Center","Title":"ProductTexts","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_List.action","Alignment":"Center","Title":"PurchaseOrderHeaders","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/PurchaseOrderItems/NavToPurchaseOrderItems_List.action","Alignment":"Center","Title":"PurchaseOrderItems","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_List.action","Alignment":"Center","Title":"SalesOrderHeaders","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/SalesOrderItems/NavToSalesOrderItems_List.action","Alignment":"Center","Title":"SalesOrderItems","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Stock/NavToStock_List.action","Alignment":"Center","Title":"Stock","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_List.action","Alignment":"Center","Title":"Suppliers","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"}],"_Name":"SectionButtonTable_com_sap_edm_sampleservice_v4","_Type":"Section.Type.ButtonTable"}]}],"_Name":"Main","_Type":"Page","ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Application/UserMenuPopover.action","_Type":"Control.Type.ActionBarItem"}],"_Name":"ActionBar1","Caption":"Main","PrefersLargeCaption":true,"_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Pages/Orders/SalesOrders_Details.page":
+/*!*****************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Pages/Orders/SalesOrders_Details.page ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{SalesOrderID}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Order Number","Visible":true},{"Value":"{LifeCycleStatusName}","_Type":"KeyValue.Type.Item","_Name":"KeyValue4","KeyName":"Status","Visible":true},{"Value":"$(D,{CreatedAt},'','',{format:'medium'})","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Created At","Visible":true},{"Value":"$(C,{NetAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Net Amount","Visible":true},{"Value":"$(C,{TaxAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","_Type":"KeyValue.Type.Item","_Name":"KeyValue5","KeyName":"Tax Amount","Visible":true},{"Value":"$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","_Type":"KeyValue.Type.Item","_Name":"KeyValue6","KeyName":"Total Amount","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":2}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"SalesOrders_Details","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Order Details"},"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"SalesOrderHeaders"}}
 
 /***/ }),
 
@@ -2719,6 +2773,16 @@ module.exports = {"ActionResult":{"_Name":"UploadLog"},"ActivityIndicatorText":"
 /***/ ((module) => {
 
 module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","CompletionTimeout":2,"Message":"Uploading Log Files...","OnSuccess":"/demoTahaApp/Actions/Logging/UploadLog.action","_Type":"Action.Type.ProgressBanner"}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Actions/Orders/NavToOrders_details.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Actions/Orders/NavToOrders_details.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToOrders_details"},"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrders_Details.page"}
 
 /***/ }),
 
