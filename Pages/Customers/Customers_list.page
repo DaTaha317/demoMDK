@@ -35,12 +35,12 @@
 						"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomer_details.action",
 						"ActivityItems": [
 							{
-								"_Name": "SectionContactCell0ActivityItems0",
+								"_Name": "customerPhone",
 								"ActivityType": "Phone",
 								"ActivityValue": "{PhoneNumber}"
 							},
 							{
-								"_Name": "SectionContactCell0ActivityItems1",
+								"_Name": "customerEmail",
 								"ActivityType": "Email",
 								"ActivityValue": "{EmailAddress}"
 							}

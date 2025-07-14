@@ -1517,28 +1517,28 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
-
-Examples:
-
-@mdkYellow1: #ffbb33;
-@mdkRed1: #ff0000;
-
-//// By-Type style: All Pages in the application will now have a yellow background
-Page
-
-{ background-color: @mdkYellow1; }
-//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
-#BlueButton
-
-{ color: @mdkYellow1; background-color: #0000FF; }
-//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
-
-.MyButton
-
-{ color: @mdkYellow1; background-color: @mdkRed1; }
-*/
-`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `ActionBar {
+  color: white;
+  background-color: #014055;
+}
+ToolBar {
+  background-color: #889397;
+}
+.btn-primary {
+  background-color: #014055;
+}
+.txt-primary {
+  color: #014055;
+}
+#customerPhone .activity-icon,
+#customerEmail .activity-icon {
+  color: #014055;
+  background-color: #014055;
+}
+#customerEmail {
+  font-size: 20px;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,cAAc;AAChB;AACA;;EAEE,cAAc;EACd,yBAAyB;AAC3B;AACA;EACE,eAAe;AACjB","sourcesContent":["ActionBar {\n  color: white;\n  background-color: #014055;\n}\nToolBar {\n  background-color: #889397;\n}\n.btn-primary {\n  background-color: #014055;\n}\n.txt-primary {\n  color: #014055;\n}\n#customerPhone .activity-icon,\n#customerEmail .activity-icon {\n  color: #014055;\n  background-color: #014055;\n}\n#customerEmail {\n  font-size: 20px;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1556,27 +1556,38 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
+___CSS_LOADER_EXPORT___.push([module.id, `@color-primary: #014055;
+@color-secondary: #889397;
+@text-primary: white;
 
-Examples:
 
-@mdkYellow1: #ffbb33;
-@mdkRed1: #ff0000;
+ActionBar {
+    color: @text-primary;
+    background-color: @color-primary;
+}
 
-//// By-Type style: All Pages in the application will now have a yellow background
-Page
+ToolBar {
+    background-color: @color-secondary;
+}
 
-{ background-color: @mdkYellow1; }
-//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
-#BlueButton
+.btn-primary {
+    background-color: @color-primary;
+}
 
-{ color: @mdkYellow1; background-color: #0000FF; }
-//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
+.txt-primary {
+    color: #014055;
+}
 
-.MyButton
+#customerPhone, #customerEmail {
+    .activity-icon {
+        color: @color-primary;
+        background-color: @color-primary;
+    }
+}
 
-{ color: @mdkYellow1; background-color: @mdkRed1; }
-*/`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/"],"sourceRoot":""}]);
+#customerEmail {
+    font-size: 20px;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.less"],"names":[],"mappings":"AAAA,uBAAuB;AACvB,yBAAyB;AACzB,oBAAoB;;;AAGpB;IACI,oBAAoB;IACpB,gCAAgC;AACpC;;AAEA;IACI,kCAAkC;AACtC;;AAEA;IACI,gCAAgC;AACpC;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI;QACI,qBAAqB;QACrB,gCAAgC;IACpC;AACJ;;AAEA;IACI,eAAe;AACnB","sourcesContent":["@color-primary: #014055;\n@color-secondary: #889397;\n@text-primary: white;\n\n\nActionBar {\n    color: @text-primary;\n    background-color: @color-primary;\n}\n\nToolBar {\n    background-color: @color-secondary;\n}\n\n.btn-primary {\n    background-color: @color-primary;\n}\n\n.txt-primary {\n    color: #014055;\n}\n\n#customerPhone, #customerEmail {\n    .activity-icon {\n        color: @color-primary;\n        background-color: @color-primary;\n    }\n}\n\n#customerEmail {\n    font-size: 20px;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1594,7 +1605,28 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
+	color: white;
+	background-color: #014055;
+}
+.ns-light ToolBar {
+	background-color: #889397;
+}
+.ns-light .btn-primary {
+	background-color: #014055;
+}
+.ns-light .txt-primary {
+	color: #014055;
+}
+.ns-light #customerPhone .activity-icon,
+#customerEmail .activity-icon {
+	color: #014055;
+	background-color: #014055;
+}
+.ns-light #customerEmail {
+	font-size: 20px;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,cAAc;AACf;AACA;;CAEC,cAAc;CACd,yBAAyB;AAC1B;AACA;CACC,eAAe;AAChB","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #014055;\n}\n.ns-light ToolBar {\n\tbackground-color: #889397;\n}\n.ns-light .btn-primary {\n\tbackground-color: #014055;\n}\n.ns-light .txt-primary {\n\tcolor: #014055;\n}\n.ns-light #customerPhone .activity-icon,\n#customerEmail .activity-icon {\n\tcolor: #014055;\n\tbackground-color: #014055;\n}\n.ns-light #customerEmail {\n\tfont-size: 20px;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1612,7 +1644,20 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `@color-primary: #014055;
+@color-secondary: #889397;
+@text-primary: white;
+ActionBar {
+	font-color: white;
+	background-color: #014055;
+}
+btn-primary {
+	background-color: #014055;
+}
+txt-primary {
+	font-color: #014055;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/demoTahaApp/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA,uBAAuB;AACvB,yBAAyB;AACzB,oBAAoB;AACpB;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB","sourcesContent":["@color-primary: #014055;\n@color-secondary: #889397;\n@text-primary: white;\nActionBar {\n\tfont-color: white;\n\tbackground-color: #014055;\n}\nbtn-primary {\n\tbackground-color: #014055;\n}\ntxt-primary {\n\tfont-color: #014055;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1796,7 +1841,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"_Type":"Section.Type.ObjectTable","DataSubscriptions":["SalesOrderHeaders"],"Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"{@odata.readLink}/SalesOrders","QueryOptions":"$top=5&$orderby=CreatedAt desc"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Customer Orders"},"Footer":{"_Type":"SectionCommon.Type.Footer","_Name":"SectionCommonTypeFooter0","Caption":"See all","AttributeLabel":"/demoTahaApp/Rules/Customers/Customers_OrderCount.js","AccessoryType":"DisclosureIndicator","FooterStyle":"Attribute","Visible":true,"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Customers/Customers_Orders.page"}},"UseBottomPadding":false},"Visible":true,"EmptySection":{"Caption":"No Customer Orders Found","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"$(D,{CreatedAt},'','',{format:'medium'})","Subhead":"{CustomerID}","DisplayDescriptionInMobile":true,"StatusText":"$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrders_Details.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Create Order","OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrderHeaders_Create.page","ModalPage":true}},"Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{FirstName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{LastName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Postal Code","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Customer Orders"},"Footer":{"_Type":"SectionCommon.Type.Footer","_Name":"SectionCommonTypeFooter0","Caption":"See all","AttributeLabel":"/demoTahaApp/Rules/Customers/Customers_OrderCount.js","AccessoryType":"DisclosureIndicator","FooterStyle":"Attribute","Visible":true,"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Customers/Customers_Orders.page"}},"UseBottomPadding":false,"Styles":{"Caption":"txt-primary","AttributeLabel":"txt-primary"}},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","DataSubscriptions":["SalesOrderHeaders"],"Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"{@odata.readLink}/SalesOrders","QueryOptions":"$top=5&$orderby=CreatedAt desc"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No Customer Orders Found","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(D,{CreatedAt},'','',{format:'medium'})","Subhead":"{CustomerID}","DisplayDescriptionInMobile":true,"StatusText":"$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrders_Details.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_details","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Rules/Customers/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Details"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Create Order","Styles":{"Button":"btn-primary"},"OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/Orders/SalesOrderHeaders_Create.page","ModalPage":true}},"Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -1806,7 +1851,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \***************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCell":{"Visible":true,"DetailImage":"","Headline":"{LastName}","Subheadline":"{FirstName}","Description":"{City}","OnPress":"/demoTahaApp/Actions/Customers/NavToCustomer_details.action","ActivityItems":[{"_Name":"SectionContactCell0ActivityItems0","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"SectionContactCell0ActivityItems1","ActivityType":"Email","ActivityValue":"{EmailAddress}"}],"ContextMenu":{"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Mode":"Expandable","Enabled":true,"BarcodeScanner":true}}]}],"_Type":"Page","_Name":"Customers_list","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Create.action"}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Customers"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","Target":{"Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCell":{"Visible":true,"DetailImage":"","Headline":"{LastName}","Subheadline":"{FirstName}","Description":"{City}","OnPress":"/demoTahaApp/Actions/Customers/NavToCustomer_details.action","ActivityItems":[{"_Name":"customerPhone","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"customerEmail","ActivityType":"Email","ActivityValue":"{EmailAddress}"}],"ContextMenu":{"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Mode":"Expandable","Enabled":true,"BarcodeScanner":true}}]}],"_Type":"Page","_Name":"Customers_list","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/demoTahaApp/Actions/Customers/NavToCustomers_Create.action"}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Customers"}}
 
 /***/ }),
 
@@ -3969,7 +4014,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = {};
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#014055"},"btn-primary":{"background-color":"#014055"},"txt-primary":{"font-color":"#014055"}}');
 
 /***/ }),
 

@@ -76,16 +76,6 @@
 					}
 				},
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"DataSubscriptions": [
-						"SalesOrderHeaders"
-					],
-					"Target": {
-						"Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
-						"EntitySet": "{@odata.readLink}/SalesOrders",
-						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -107,12 +97,11 @@
 								"PageToOpen": "/demoTahaApp/Pages/Customers/Customers_Orders.page"
 							}
 						},
-						"UseBottomPadding": false
-					},
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No Customer Orders Found",
-						"FooterVisible": false
+						"UseBottomPadding": false,
+						"Styles": {
+							"Caption": "txt-primary",
+							"AttributeLabel": "txt-primary"
+						}
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -121,7 +110,35 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"DataSubscriptions": [
+						"SalesOrderHeaders"
+					],
+					"Target": {
+						"Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "{@odata.readLink}/SalesOrders",
+						"QueryOptions": "$top=5&$orderby=CreatedAt desc"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Customer Orders Found",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
 						"Title": "$(D,{CreatedAt},'','',{format:'medium'})",
 						"Subhead": "{CustomerID}",
 						"DisplayDescriptionInMobile": true,
@@ -145,24 +162,11 @@
 							}
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
@@ -216,6 +220,9 @@
 				"_Name": "ToolbarItem0",
 				"Visible": true,
 				"Title": "Create Order",
+				"Styles": {
+					"Button": "btn-primary"
+				},
 				"OnPress": {
 					"Name": "/demoTahaApp/Actions/GenericNavigation.action",
 					"Properties": {

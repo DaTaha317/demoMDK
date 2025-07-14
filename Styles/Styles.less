@@ -1,21 +1,21 @@
-/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
+@color-primary: #014055;
+@color-secondary: #889397;
+@text-primary: white;
 
-Examples:
 
-@mdkYellow1: #ffbb33;
-@mdkRed1: #ff0000;
+ActionBar {
+    color: @text-primary;
+    background-color: @color-primary;
+}
 
-//// By-Type style: All Pages in the application will now have a yellow background
-Page
+ToolBar {
+    background-color: @color-secondary;
+}
 
-{ background-color: @mdkYellow1; }
-//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
-#BlueButton
+.btn-primary {
+    background-color: @color-primary;
+}
 
-{ color: @mdkYellow1; background-color: #0000FF; }
-//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
-
-.MyButton
-
-{ color: @mdkYellow1; background-color: @mdkRed1; }
-*/
+.txt-primary {
+    color: #014055;
+}
