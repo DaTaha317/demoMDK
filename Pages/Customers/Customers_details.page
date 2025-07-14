@@ -77,6 +77,9 @@
 				},
 				{
 					"_Type": "Section.Type.ObjectTable",
+					"DataSubscriptions": [
+						"SalesOrderHeaders"
+					],
 					"Target": {
 						"Service": "/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service",
 						"EntitySet": "{@odata.readLink}/SalesOrders",
@@ -203,5 +206,28 @@
 		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Details"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": true,
+				"Title": "Create Order",
+				"OnPress": {
+					"Name": "/demoTahaApp/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/demoTahaApp/Pages/Orders/SalesOrderHeaders_Create.page",
+						"ModalPage": true
+					}
+				},
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }
