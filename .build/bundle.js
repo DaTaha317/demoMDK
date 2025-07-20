@@ -258,6 +258,7 @@ let demotahaapp_pages_customers_customers_orders_page = __webpack_require__(/*! 
 let demotahaapp_pages_customers_customres_edits_page = __webpack_require__(/*! ./demoTahaApp/Pages/Customers/Customres_edits.page */ "./build.definitions/demoTahaApp/Pages/Customers/Customres_edits.page")
 let demotahaapp_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./demoTahaApp/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/demoTahaApp/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let demotahaapp_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./demoTahaApp/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/demoTahaApp/Pages/ErrorArchive/ErrorArchive_List.page")
+let demotahaapp_pages_extensionstest_extensiontest_page = __webpack_require__(/*! ./demoTahaApp/Pages/extensionsTest/extensionTest.page */ "./build.definitions/demoTahaApp/Pages/extensionsTest/extensionTest.page")
 let demotahaapp_pages_main_page = __webpack_require__(/*! ./demoTahaApp/Pages/Main.page */ "./build.definitions/demoTahaApp/Pages/Main.page")
 let demotahaapp_pages_mainbackup_page = __webpack_require__(/*! ./demoTahaApp/Pages/MainBackUp.page */ "./build.definitions/demoTahaApp/Pages/MainBackUp.page")
 let demotahaapp_pages_orders_salesorderheaders_create_page = __webpack_require__(/*! ./demoTahaApp/Pages/Orders/SalesOrderHeaders_Create.page */ "./build.definitions/demoTahaApp/Pages/Orders/SalesOrderHeaders_Create.page")
@@ -526,6 +527,7 @@ module.exports = {
 	demotahaapp_pages_customers_customres_edits_page : demotahaapp_pages_customers_customres_edits_page,
 	demotahaapp_pages_errorarchive_errorarchive_detail_page : demotahaapp_pages_errorarchive_errorarchive_detail_page,
 	demotahaapp_pages_errorarchive_errorarchive_list_page : demotahaapp_pages_errorarchive_errorarchive_list_page,
+	demotahaapp_pages_extensionstest_extensiontest_page : demotahaapp_pages_extensionstest_extensiontest_page,
 	demotahaapp_pages_main_page : demotahaapp_pages_main_page,
 	demotahaapp_pages_mainbackup_page : demotahaapp_pages_mainbackup_page,
 	demotahaapp_pages_orders_salesorderheaders_create_page : demotahaapp_pages_orders_salesorderheaders_create_page,
@@ -2002,7 +2004,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*******************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"Header":{"Headline":"Services","SubHeadline":"Sub Headline","Alignment":"Left","IconIsCircular":false,"DisableIconText":false},"Sections":[{"_Name":"SideDrawerSection0","Items":[{"Title":"Customers","Image":"sap-icon://customer-and-contacts","OnPress":"/demoTahaApp/Actions/Customers/NavToCustomer_list.action","_Name":"SideDrawerSection0Item0","Visible":true,"TextAlignment":"Left"},{"Title":"Products","Image":"sap-icon://product","OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action","_Name":"SideDrawerSection0Item1","Visible":true,"TextAlignment":"Left"}],"Visible":true,"PreserveImageSpacing":true,"SeparatorEnabled":true}],"_Type":"Control.Type.SideDrawer","_Name":"SideDrawer0","AlwaysShowDrawerButton":false,"ClearHistory":false}],"_Type":"Page","_Name":"sideDrawer","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"Header":{"Headline":"Services","SubHeadline":"Sub Headline","Alignment":"Left","IconIsCircular":false,"DisableIconText":false},"Sections":[{"_Name":"SideDrawerSection0","Items":[{"Title":"Customers","Image":"sap-icon://customer-and-contacts","OnPress":"/demoTahaApp/Actions/Customers/NavToCustomer_list.action","_Name":"SideDrawerSection0Item0","Visible":true,"TextAlignment":"Left"},{"Title":"Products","Image":"sap-icon://product","OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action","_Name":"SideDrawerSection0Item1","Visible":true,"TextAlignment":"Left"},{"Title":"Slider Test","Image":"sap-icon://arrow-right","OnPress":{"Name":"/demoTahaApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/demoTahaApp/Pages/extensionsTest/extensionTest.page"}},"_Name":"SideDrawerSection0Item2","Visible":true,"TextAlignment":"Left"}],"Visible":true,"PreserveImageSpacing":true,"SeparatorEnabled":true}],"_Type":"Control.Type.SideDrawer","_Name":"SideDrawer0","AlwaysShowDrawerButton":false,"ClearHistory":false}],"_Type":"Page","_Name":"sideDrawer","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -2503,6 +2505,16 @@ module.exports = {"DesignTimeTarget":{"Service":"/demoTahaApp/Services/com_sap_e
 /***/ ((module) => {
 
 module.exports = {"ActionBar":{"Items":[{"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_Create.action","Position":"Right","SystemItem":"Add","_Type":"Control.Type.ActionBarItem"}],"Caption":"$(L,Suppliers)","_Type":"Control.Type.ActionBar"},"Controls":[{"Sections":[{"Header":{"UseTopPadding":false,"_Type":"SectionCommon.Type.Header"},"ObjectCell":{"AccessoryType":"DisclosureIndicator","Description":"{Country}","AvatarStack":{"Avatars":[{"Image":""}],"ImageIsCircular":false},"Icons":[],"OnPress":"/demoTahaApp/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_Detail.action","StatusImage":"","Title":"{SupplierName}","Footnote":"{EmailAddress}","PreserveIconStackSpacing":false,"StatusText":"{HouseNumber}","Subhead":"{City}","SubstatusText":"{PhoneNumber}","_Type":"ObjectTable.Type.ObjectCell"},"EmptySection":{"Caption":"No record found!"},"Search":{"Enabled":true,"Placeholder":"Item Search","BarcodeScanner":true,"Delay":500,"MinimumCharacterThreshold":3},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Loading more items, please wait..."},"Target":{"EntitySet":"Suppliers","Service":"/demoTahaApp/Services/com_sap_edm_sampleservice_v4.service","QueryOptions":""},"_Type":"Section.Type.ObjectTable"}],"LoadingIndicator":{"Enabled":true,"Text":"Loading, please wait..."},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable"}],"_Type":"Page","_Name":"Suppliers_List"}
+
+/***/ }),
+
+/***/ "./build.definitions/demoTahaApp/Pages/extensionsTest/extensionTest.page":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/demoTahaApp/Pages/extensionsTest/extensionTest.page ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"extensionTest","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Slider Test"}}
 
 /***/ }),
 

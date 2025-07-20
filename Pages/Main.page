@@ -27,6 +27,19 @@
 							"_Name": "SideDrawerSection0Item1",
 							"Visible": true,
 							"TextAlignment": "Left"
+						},
+						{
+							"Title": "Slider Test",
+							"Image": "sap-icon://arrow-right",
+							"OnPress": {
+								"Name": "/demoTahaApp/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/demoTahaApp/Pages/extensionsTest/extensionTest.page"
+								}
+							},
+							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "Left"
 						}
 					],
 					"Visible": true,
@@ -44,7 +57,7 @@
 	"_Name": "sideDrawer",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
