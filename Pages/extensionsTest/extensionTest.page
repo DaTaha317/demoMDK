@@ -1,18 +1,84 @@
 {
 	"Controls": [
 		{
-			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable0",
 			"FilterFeedbackBar": {
 				"ShowAllFilters": false,
 				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Extension",
+							"_Name": "MyExtensionControlName",
+							"Module": "MySliderModule",
+							"Control": "MySliderExtension",
+							"Class": "MySliderClass",
+							"ExtensionProperties": {
+								"MaxValue": 200,
+								"MinValue": 10,
+								"Title": "Counter"
+							},
+							"Height": 72,
+							"IsVisible": true,
+							"Separator": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Manual Entry",
+							"PlaceHolder": "Enter number to set the slider ext's value",
+							"OnValueChange": "/demoTahaApp/Rules/extensionTest/SetExtensionValue.js",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "extensionTest",
 	"ActionBar": {
-		"Items": [],
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": {
+					"Name": "/demoTahaApp/Actions/GenericMessageBox.action",
+					"Properties": {
+						"Message": "#Control:MyExtensionControlName/#Value",
+						"Title": "Value of the Slider is:",
+						"OKCaption": "OK"
+					}
+				}
+			}
+		],
 		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Slider Test"
