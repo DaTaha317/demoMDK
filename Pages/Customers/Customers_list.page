@@ -75,10 +75,20 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": "/demoTahaApp/Actions/Customers/NavToCustomers_Create.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Language",
+				"Icon": "sap-icon://world",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/demoTahaApp/Actions/Application/languageMenuPopover.action"
 			}
 		],
 		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Customers"
+		"Caption": "$(L,'Customers')"
 	}
 }

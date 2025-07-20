@@ -84,6 +84,10 @@
 						"Caption": "Customer Orders"
 					},
 					"Footer": {
+						"Styles": {
+							"Caption": "txt-primary",
+							"AttributeLabel": "txt-primary"
+						},
 						"_Type": "SectionCommon.Type.Footer",
 						"_Name": "SectionCommonTypeFooter0",
 						"Caption": "See all",
@@ -97,11 +101,7 @@
 								"PageToOpen": "/demoTahaApp/Pages/Customers/Customers_Orders.page"
 							}
 						},
-						"UseBottomPadding": false,
-						"Styles": {
-							"Caption": "txt-primary",
-							"AttributeLabel": "txt-primary"
-						}
+						"UseBottomPadding": false
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -209,7 +209,7 @@
 		],
 		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Details"
+		"Caption": "$(L,'Customer_Detail')"
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",

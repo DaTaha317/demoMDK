@@ -3,8 +3,17 @@
         "./.vscode/my-less.css-data.json"
     ],
     "mdk.uieditor": {
-        "device": "phone"
+        "left": {
+            "visible": true
+        },
+        "right": {
+            "visible": true,
+            "width": 320
+        }
     },
     "mdk.defaultEditor": "MDK Editor",
-    "workbench.editorAssociations": {}
+    "workbench.editorAssociations": {},
+    "mdk.i18n": {
+        "displayLanguages": "i18n,i18n_ar"
+    }
 }

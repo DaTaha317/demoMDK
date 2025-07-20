@@ -1,0 +1,40 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "languageMenuPopover"
+	},
+	"PopoverItems": [
+		{
+			"Title": "English",
+			"Icon": "",
+			"TextAlignment": "Left",
+			"OnPress": "/demoTahaApp/Actions/Application/setEnglish.action",
+			"Visible": true,
+			"Enabled": true,
+			"Styles.Title": "",
+			"Styles.Icon": ""
+		},
+		{
+			"Title": "Arabic",
+			"Icon": "",
+			"TextAlignment": "Left",
+			"OnPress": "/demoTahaApp/Actions/Application/setArabic.action",
+			"Visible": true,
+			"Enabled": true,
+			"Styles.Title": "",
+			"Styles.Icon": ""
+		},
+		{
+			"Title": "themes",
+			"Icon": "",
+			"TextAlignment": "Left",
+			"Styles": {
+				"Title": "",
+				"Icon": ""
+			},
+			"OnPress": "/demoTahaApp/Actions/Application/themeMenuPopover.action",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

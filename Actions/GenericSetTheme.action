@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.SetTheme",
+	"ActionResult": {
+		"_Name": "GenericSetTheme"
+	},
+	"OnSuccess": "/demoTahaApp/Rules/Application/RefreshPage.js",
+	"Theme": "Styles"
+}

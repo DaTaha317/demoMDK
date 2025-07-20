@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.SetLanguage",
+	"ActionResult": {
+		"_Name": "setArabic"
+	},
+	"OnSuccess": "/demoTahaApp/Rules/Application/RefreshPage.js",
+	"Language": "ar"
+}

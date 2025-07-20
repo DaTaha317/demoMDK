@@ -1,0 +1,35 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "themeMenuPopover"
+	},
+	"PopoverItems": [
+		{
+			"Title": "blue",
+			"Icon": "",
+			"TextAlignment": "Left",
+			"OnPress": "/demoTahaApp/Actions/GenericSetTheme.action",
+			"Visible": true,
+			"Enabled": true,
+			"Styles.Title": "",
+			"Styles.Icon": ""
+		},
+		{
+			"Title": "red",
+			"Icon": "",
+			"TextAlignment": "Left",
+			"Styles": {
+				"Title": "",
+				"Icon": ""
+			},
+			"OnPress": {
+				"Name": "/demoTahaApp/Actions/GenericSetTheme.action",
+				"Properties": {
+					"Theme": "RedTheme"
+				}
+			},
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"_Type": "Action.Type.SetLanguage",
+	"ActionResult": {
+		"_Name": "setEnglish"
+	},
+	"OnFailure": {
+		"Name": "/demoTahaApp/Actions/GenericToastMessage.action",
+		"Properties": {
+			"Message": "Error: {#ActionResults:setEnglish/error}"
+		}
+	},
+	"OnSuccess": "/demoTahaApp/Rules/Application/RefreshPage.js",
+	"Language": "en"
+}
